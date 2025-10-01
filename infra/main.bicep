@@ -1,5 +1,5 @@
 param location string = resourceGroup().location
-param webAppName string = 'azd-template-kikkoust'
+param webAppName string = 'azd-calc-template-kikkoust'
 param sku string = 'F1'
 
 resource appServicePlan 'Microsoft.Web/serverfarms@2023-01-01' = {
@@ -29,3 +29,4 @@ resource webApp 'Microsoft.Web/sites@2023-01-01' = {
     }
   }
 }
+
